@@ -19,12 +19,11 @@ public class ProductController {
 
     public ProductController(){
           
-            Product p1 = new Product();
-            p1.setId(1L);
-            p1.setName("Notebook");
-            p1.setPrice(3500.00);
-            p1.setDescription("Notebook i7 512 16gb");
-            
+            Product p1 = new Product(1l,
+                                    "Notebook", 
+                                    3500.00,
+                                    "Notebook i7 512 16gb");
+          
             Product p2 = new Product();
             p2.setId(2L);
             p2.setName("Smartphone");
