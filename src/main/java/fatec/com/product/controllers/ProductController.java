@@ -51,6 +51,7 @@ public class ProductController {
                 .filter(p -> p.getId() == id)
                 .findFirst()
                 .orElse(null);
+
            
         }
 
@@ -58,6 +59,12 @@ public class ProductController {
         @GetMapping
         public ArrayList<Product> getProducts() {
             return products;
+        }
+        //aqui dannn
+        @PostMapping
+        public Product createProduct(Product product){
+            products.add(product);
+            return product;
         }
 
 }
